@@ -19,7 +19,7 @@ def dfs(idx, now):
         for i in range(9):
             print(int(ans[i]+1), end='')
         print("",flush=True)
-        return
+        return 0
     
     
     
