@@ -17,16 +17,16 @@ def dfs(idx, now):
     ans[idx] = now
     if(idx == 8):
         for i in range(9):
-            print(int(ans[i]+1), end='')
+            print(int(ans[i]+1),end='')
         print("",flush=True)
-        return 0
+        return
     
     
     
     for j in range(5):
         if(map[now][j] == 1):
             map[now][j] = map[j][now] = 0
-            dfs(idx+1, j)
+            dfs(idx+1,j)
             map[now][j] = map[j][now] = 1
         
     
